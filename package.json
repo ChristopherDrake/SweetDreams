@@ -1,0 +1,19 @@
+{
+  "name": "sweetdreams",
+  "version": "1.0.0",
+  "description": "Dream Journal",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChristopherDrake/SweetDreams.git"
+  },
+  "author": "Christopher Massonet",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChristopherDrake/SweetDreams/issues"
+  },
+  "homepage": "https://github.com/ChristopherDrake/SweetDreams#readme"
+}
