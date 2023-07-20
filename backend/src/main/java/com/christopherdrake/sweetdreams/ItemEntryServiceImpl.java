@@ -74,6 +74,13 @@ public class ItemEntryServiceImpl implements ItemEntryService {
         item.put("date",
                 AttributeValue.builder().s(itemEntry.getDate().format(DateTimeFormatter.ISO_LOCAL_DATE_TIME)).build());
         item.put("tags", AttributeValue.builder().ss(itemEntry.getTags()).build());
+        item.put("title", AttributeValue.builder().s(itemEntry.getTitle()).build());
+        item.put("dreamMood", AttributeValue.builder().s(itemEntry.getDreamMood()).build());
+        item.put("dreamType", AttributeValue.builder().s(itemEntry.getDreamType()).build());
+        item.put("dreamSetting", AttributeValue.builder().s(itemEntry.getDreamSetting()).build());
+        item.put("dreamPeople", AttributeValue.builder().s(itemEntry.getDreamPeople()).build());
+        item.put("dreamEmotions", AttributeValue.builder().s(itemEntry.getDreamEmotions()).build());
+        item.put("dreamColors", AttributeValue.builder().s(itemEntry.getDreamColors()).build());
 
         return item;
     }
@@ -87,6 +94,13 @@ public class ItemEntryServiceImpl implements ItemEntryService {
         itemEntry.setBody(dynamoDbItem.get("body").s());
         itemEntry.setDate(LocalDateTime.parse(dynamoDbItem.get("date").s(), DateTimeFormatter.ISO_LOCAL_DATE_TIME));
         itemEntry.setTags(dynamoDbItem.get("tags").ss());
+        itemEntry.setTitle(dynamoDbItem.get("title").s());
+        itemEntry.setDreamMood(dynamoDbItem.get("dreamMood").s());
+        itemEntry.setDreamType(dynamoDbItem.get("dreamType").s());
+        itemEntry.setDreamSetting(dynamoDbItem.get("dreamSetting").s());
+        itemEntry.setDreamPeople(dynamoDbItem.get("dreamPeople").s());
+        itemEntry.setDreamEmotions(dynamoDbItem.get("dreamEmotions").s());
+        itemEntry.setDreamColors(dynamoDbItem.get("dreamColors").s());
 
         return itemEntry;
     }

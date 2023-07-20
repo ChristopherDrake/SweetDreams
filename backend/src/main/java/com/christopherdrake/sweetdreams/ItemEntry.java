@@ -12,6 +12,13 @@ public class ItemEntry {
     private String body;
     private LocalDateTime date;
     private List<String> tags;
+    private String title;
+    private String dreamMood;
+    private String dreamType;
+    private String dreamSetting;
+    private String dreamPeople;
+    private String dreamEmotions;
+    private String dreamColors;
 
     // getters and setters...
     public String getUserId() {
@@ -72,5 +79,61 @@ public class ItemEntry {
 
     public void setTags(List<String> tags) {
         this.tags = tags;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getDreamMood() {
+        return dreamMood;
+    }
+
+    public void setDreamMood(String dreamMood) {
+        this.dreamMood = dreamMood;
+    }
+
+    public String getDreamType() {
+        return dreamType;
+    }
+
+    public void setDreamType(String dreamType) {
+        this.dreamType = dreamType;
+    }
+
+    public String getDreamSetting() {
+        return dreamSetting;
+    }
+
+    public void setDreamSetting(String dreamSetting) {
+        this.dreamSetting = dreamSetting;
+    }
+
+    public String getDreamPeople() {
+        return dreamPeople;
+    }
+
+    public void setDreamPeople(String dreamPeople) {
+        this.dreamPeople = dreamPeople;
+    }
+
+    public String getDreamEmotions() {
+        return dreamEmotions;
+    }
+
+    public void setDreamEmotions(String dreamEmotions) {
+        this.dreamEmotions = dreamEmotions;
+    }
+
+    public String getDreamColors() {
+        return dreamColors;
+    }
+
+    public void setDreamColors(String dreamColors) {
+        this.dreamColors = dreamColors;
     }
 }

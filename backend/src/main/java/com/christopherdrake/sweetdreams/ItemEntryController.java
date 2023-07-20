@@ -2,8 +2,6 @@ package com.christopherdrake.sweetdreams;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import com.christopherdrake.sweetdreams.ItemEntry;
-import com.christopherdrake.sweetdreams.ItemEntryServiceImpl;
 
 @RestController
 @RequestMapping("/item")
